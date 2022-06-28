@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <img class="image"
+      src="https://sleeplessaliana1.files.wordpress.com/2022/04/ive-2nd-single-album-love-dive.jpg"
+      alt=""Love Dive" />
+
+      <div class="player">
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+        <div class="time">
+          <div class="lapse">00:<span class="seconds">00</span></div>
+          <div class="remaining">00:<span class="seconds"></span></div>
+        </div>
+
+        <h1 class="title">Love Dive</h1>
+        <span class="artist">아이브</span>
+        <ul class="btns">
+          <li>
+            <button class="backward-btn" aria-label="backward">
+              <i class="fa-solid fa-backward"></i>
+            </button>
+          </li>
+          <li>
+            <button class="play-btn" aria-label="play">
+              <i class="fa-solid fa-play"></i>
+            </button>
+            <button class="pause-btn hidden" aria-label="pause">
+              <i class="fa-solid fa-pause"></i>
+            </button>
+          </li>
+
+          <li>
+            <button class="forward-btn" aria-label="forward">
+              <i class="fa-solid fa-forward"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/f578b19b63.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
