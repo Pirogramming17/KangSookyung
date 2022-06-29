@@ -30,17 +30,20 @@
             </h1>
           </a>
           <h2 class="blind">검색창</h2>
-          <form class="inline-block" action="https://search.naver.com/search.naver?sm=top_hty&fbm=0&ie=utf8&query=">
-          <fieldset>
-            <legend class="blind">검색</legend>
-            <input />
-            <span id="search-keyboard"></span>
-            <span id="search-history"></span>
-            <button>
-              <span class="blind">검색</span>
-              <span id="search-image"></span>
-            </button>
-          </fieldset>
+          <form
+            class="inline-block"
+            action="https://search.naver.com/search.naver?sm=top_hty&fbm=0&ie=utf8&query="
+          >
+            <fieldset>
+              <legend class="blind">검색</legend>
+              <input />
+              <span id="search-keyboard"></span>
+              <span id="search-history"></span>
+              <button>
+                <span class="blind">검색</span>
+                <span id="search-image"></span>
+              </button>
+            </fieldset>
           </form>
         </div>
       </div>
@@ -50,10 +53,54 @@
       <div class="center-align relative">
         <div id="search-ranking">
           <h2 class="blind">실시간 검색어</h2>
-          <span id="rank-number">1</span>
-          <span id="rank-title">강수경</span>
+          <div>
+            <span id="rank-number">1</span>
+            <span id="rank-title">제로초</span>
+          </div>
+          <ul>
+            <li>
+              <span class="rank-number">1</span>
+              <span class="rank-title">강수경</span>
+            </li>
+            <li>
+              <span class="rank-number">2</span>
+              <span class="rank-title">강수경</span>
+            </li>
+            <li>
+              <span class="rank-number">3</span>
+              <span class="rank-title">강수경</span>
+            </li>
+            <li>
+              <span class="rank-number">4</span>
+              <span class="rank-title">강수경</span>
+            </li>
+            <li>
+              <span class="rank-number">5</span>
+              <span class="rank-title">강수경</span>
+            </li>
+            <li>
+              <span class="rank-number">6</span>
+              <span class="rank-title">강수경</span>
+            </li>
+            <li>
+              <span class="rank-number">7</span>
+              <span class="rank-title">강수경</span>
+            </li>
+            <li>
+              <span class="rank-number">8</span>
+              <span class="rank-title">강수경</span>
+            </li>
+            <li>
+              <span class="rank-number">9</span>
+              <span class="rank-title">강수경</span>
+            </li>
+            <li>
+              <span class="rank-number">10</span>
+              <span class="rank-title">강수경</span>
+            </li>
+          </ul>
         </div>
-        <ul>
+        <ul id="nav-menu">
           <li>
             <a href="">
               <span class="nav-item-mail"></span>
@@ -139,43 +186,59 @@
       <div id="main-centered" class="center-align">
         <div id="main-first-block">
           <div id="main-ad"></div>
-      <div id="main-login">
-        <h3>로그인</h3>
-      </div>
-    </div>
-    <div id="main-second-block">
-      <div class="inline-block">
-        <div id="main-ytn">
-          <h3>연합뉴스</h3>
-          <ol>
-                <li>속보)지금 너무 졸려</li>
-                /ol>
-              </div>
-              <div id="main-newsstand">
-                <h3>뉴스스탠드</h3>
-                <ul>
-                  <li><img src="./과학동아.png" alt="과학동아" /></li>
-                  <li><img src="./한국일보.png" alt="한국일보" /></li>
-                  <li><img src="./osen.png" alt="osen" /></li>
-                  <li><img src="./매일경제.png" alt="매일경제" /></li>
-                  <li><img src="./파이낸셜뉴스.png" alt="파이낸셜뉴스" /></li>
-                  <li><img src="./한국경제TV.png" alt="한국경제TV" /></li>
-                  <li><img src="./과학동아.png" alt="과학동아" /></li>
-                  <li><img src="./한국일보.png" alt="한국일보" /></li>
-                  <li><img src="./osen.png" alt="osen" /></li>
-                  <li><img src="./매일경제.png" alt="매일경제" /></li>
-                  <li><img src="./파이낸셜뉴스.png" alt="파이낸셜뉴스" /></li>
-                  <li><img src="./한국경제TV.png" alt="한국경제TV" /></li>
-                  <li><img src="./과학동아.png" alt="과학동아" /></li>
-                  <li><img src="./한국일보.png" alt="한국일보" /></li>
-                  <li><img src="./osen.png" alt="osen" /></li>
-                  <li><img src="./매일경제.png" alt="매일경제" /></li>
-                  <li><img src="./파이낸셜뉴스.png" alt="파이낸셜뉴스" /></li>
-                  <li><img src="./한국경제TV.png" alt="한국경제TV" /></li>
+          <div id="main-login">
+            <h3 class="blind">로그인</h3>
+            <div class="login-wrapper">
+              <span class="login-text"
+                >네이버를 더 안전하고 편리하게 이용하세요.</span
+              >
+              <a
+                href="https://nid.naver.com/nidlogin.login?mode=form&url=https%3A%2F%2Fwww.naver.com"
+              >
+                <span class="blind">NAVER 로그인</span>
+                <span class="login-image"></span>
+              </a>
+              <a
+                class="login-signup"
+                href="https://nid.naver.com/nidregister.form?url=https%3A%2F%2Fwww.naver.com"
+                >회원가입</a
+              >
+            </div>
+          </div>
+        </div>
+        <div id="main-second-block">
+          <div class="float-left">
+            <div id="main-ytn">
+              <h3>연합뉴스</h3>
+              <ol>
+                <li>충격) 제로초 지금 목아파...</li>
+              </ol>
+            </div>
+            <div id="main-newsstand">
+              <h3>뉴스스탠드</h3>
+              <ul>
+                <li><img src="./과학동아.png" alt="과학동아" /></li>
+                <li><img src="./한국일보.png" alt="한국일보" /></li>
+                <li><img src="./osen.png" alt="osen" /></li>
+                <li><img src="./매일경제.png" alt="매일경제" /></li>
+                <li><img src="./파이낸셜뉴스.png" alt="파이낸셜뉴스" /></li>
+                <li><img src="./한국경제TV.png" alt="한국경제TV" /></li>
+                <li><img src="./과학동아.png" alt="과학동아" /></li>
+                <li><img src="./한국일보.png" alt="한국일보" /></li>
+                <li><img src="./osen.png" alt="osen" /></li>
+                <li><img src="./매일경제.png" alt="매일경제" /></li>
+                <li><img src="./파이낸셜뉴스.png" alt="파이낸셜뉴스" /></li>
+                <li><img src="./한국경제TV.png" alt="한국경제TV" /></li>
+                <li><img src="./과학동아.png" alt="과학동아" /></li>
+                <li><img src="./한국일보.png" alt="한국일보" /></li>
+                <li><img src="./osen.png" alt="osen" /></li>
+                <li><img src="./매일경제.png" alt="매일경제" /></li>
+                <li><img src="./파이낸셜뉴스.png" alt="파이낸셜뉴스" /></li>
+                <li><img src="./한국경제TV.png" alt="한국경제TV" /></li>
               </ul>
             </div>
           </div>
-          <div class="inline-block"><!--세로로두도막-->
+          <div class="float-left">
             <div id="main-weather"></div>
             <div id="main-second-ad"></div>
           </div>
@@ -185,7 +248,11 @@
             <h3>주제별 보기</h3>
           </div>
           <div id="main-shopping">
-            <h3>쇼핑</h3>
+            <iframe
+              src="https://castbox.shopping.naver.com/shopbox/main.nhn?"
+              frameborder="0"
+              scrolling="no"
+            ></iframe>
           </div>
         </div>
         <div id="main-fourth-block">
@@ -196,9 +263,6 @@
         </div>
       </div>
     </main>
-
-    <!--h중요도 순으로 키워드 크기 차이가 나서 중요도 차이가-->
-
     <footer>
       <div>공지사항</div>
       <div>Creators</div>
