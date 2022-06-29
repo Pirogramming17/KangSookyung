@@ -1,0 +1,33 @@
+.blind {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+#header-center {
+  margin: 0 auto;
+  width: 1080px;
+}
+/*div 앞에 생략 할수 있음*/
+
+/*자식*/
+#header-search > h1 {
+  width: 280px;
+  display: inline-block;
+}
+
+#header-search h2 {
+  display: none;
+}
+/*자손
+#header-center h1{
+
+}
+*/
+#header-search fieldset {
+  width: 520px;
+  display: inline-block;
+}
