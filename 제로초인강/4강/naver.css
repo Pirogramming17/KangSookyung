@@ -125,7 +125,7 @@ nav ul {
 nav li {
   display: inline-block;
 }
-
+/*뒤에 나오는 css가 우선순위가 높다*/
 nav li:first-child span:first-child {
   width: 25px;
   background-position: 0 -285px;
