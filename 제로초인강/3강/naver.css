@@ -12,11 +12,25 @@
   width: 1080px;
 }
 /*div 앞에 생략 할수 있음*/
-
+#header-search a {
+  text-decoration: none;
+}
 /*자식*/
-#header-search > h1 {
-  width: 280px;
+#header-search h1 {
+  width: 198px;
+  height: 48px;
   display: inline-block;
+  /*background-image: url(./sp_search.png);*/
+  /*background-position: -4px -10px;*/
+  /*background-repeat: no-repeat;*/
+  background: url(./sp_search.png) -4px -4px no-repeat;
+  vertical-align: middle;
+  position: relative;
+  top: -6px;
+}
+
+#header-search h1 span {
+  display: none;
 }
 
 #header-search h2 {
@@ -28,6 +42,14 @@
 }
 */
 #header-search fieldset {
-  width: 520px;
+  margin-left: 20px;
+  /*padding-top: 12px;*/
+  /*padding-bottom: 12px;*/
+  /*padding-left: 10px;*/
+  /*padding-right: 0;*/
+  padding: 12px 0 12px 10px;
+  width: 521px;
+  height: 49px;
   display: inline-block;
+  border: 2px solid #03cf5d; /* 한방에 써주는 법*/
 }
