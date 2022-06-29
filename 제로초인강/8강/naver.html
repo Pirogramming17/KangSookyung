@@ -1,17 +1,23 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html lang="ko">
+  <!--한국어다-->
   <head>
+    <!--문서에대한 부가적인 정보, 화면에 안보임 어떤 언어로 되어있는지, 
+웹사이트에 대한 설명,제목 등 -->
     <meta charset="utf-8" />
     <title>네이버</title>
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+    <!-- ./는 현재 폴더를 의미, / 프로젝트의 최상위 폴더-->
     <link rel="stylesheet" href="./naver.css" />
   </head>
   <body>
+    <!--화면을 담당한다.-->
+
     <header>
+      <!--역할에 맞는 div 태그 사용-->
+
       <div class="center-align">
-        <!-- 가운데 정렬용 div -->
-        <!-- 속성명: 속성값; 속성명2: 속성값2;  -->
-        <!-- 인라인 스타일 -->
+        <!--가운데 정렬 div 사용 너비는 1080으로 해라-->
         <div id="header-top">
           <span>네이버를 시작페이지로 > | </span>
           <span>쥬니어네이버 | </span>
@@ -33,7 +39,7 @@
               <input />
               <span id="search-keyboard"></span>
               <span id="search-history"></span>
-              <button type="submit">
+              <button>
                 <span class="blind">검색</span>
                 <span id="search-image"></span>
               </button>
@@ -42,13 +48,14 @@
         </div>
       </div>
     </header>
+
     <nav>
       <div class="center-align relative">
         <div id="search-ranking">
           <h2 class="blind">실시간 검색어</h2>
           <div>
             <span id="rank-number">1</span>
-            <span id="rank-title">강수경</span>
+            <span id="rank-title">제로초</span>
           </div>
           <ul>
             <li>
@@ -94,19 +101,20 @@
           </ul>
         </div>
         <ul id="nav-menu">
-          <!-- unordered list -->
-          <!-- ol 태그도 있어요 ordered list -->
           <li>
             <a href="">
               <span class="nav-item-mail"></span>
               <span class="blind">메일</span>
             </a>
           </li>
+          <!--unordered list 여기서부터 리스트야!--><!--ol으 경우 숫자로 바뀜-->
+
           <!-- list item -->
+
           <li>
             <a href=""><span></span><span class="blind">카페</span></a>
           </li>
-          <!-- list item -->
+          <!--list item-->
           <li>
             <a href=""><span></span><span class="blind">블로그</span></a>
           </li>
@@ -116,7 +124,7 @@
           </li>
           <!-- list item -->
           <li>
-            <a href=""><span></span><span class="blind">네이버쇼핑</span></a>
+            <a href=""><span></span><span class="blind">쇼핑</span></a>
           </li>
           <!-- list item -->
           <li>
@@ -173,6 +181,7 @@
         </ul>
       </div>
     </nav>
+
     <main>
       <div id="main-centered" class="center-align">
         <div id="main-first-block">
