@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  color: white;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 1920px;
+  height: 750px;
+}
+
+.blind {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.center-align {
+  margin: 0 auto;
+  width: 1080px;
+}
+.inline-block {
+  display: inline-block;
+}
+
+.relative {
+  position: relative;
+}
+
+.container {
+  width: 1920px;
+  height: 604px;
+  margin: 0 auto;
+  z-index: 0;
+  position: relative;
+}
+
+header {
+  background-color: rgb(34, 38, 51);
+  align-items: center;
+  padding: 15px 5px;
+  height: auto;
+}
+
+#content {
+  height: 44px;
+  margin: auto;
+}
+
+#main-menu {
+  top: 5px;
+  left: 0;
+}
+
+#main-menu ul {
+  display: flex;
+  list-style: none;
+}
+
+#main-menu span {
+  margin: auto 14px;
+}
+
+#main-menu span .logo {
+  font-size: 30px;
+}
+
+#main-menu span i {
+  font-size: 15px;
+  margin-left: 4px;
+}
+
+#search-sign {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+#search-sign input {
+  background-color: rgb(96, 99, 107);
+  font-size: 15px;
+  height: 35px;
+  width: 235px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+#search-sign input::placeholder {
+  color: white;
+}
+
+#search-sign button {
+  background-color: transparent;
+  border: none;
+  padding: 22px 20px;
+  font-size: 14px;
+}
+
+main {
+  background: rgb(34, 38, 51);
+}
+
+.main {
+  display: flex;
+}
+
+#title {
+  width: 33%;
+  padding: 10px 60px 60px;
+  margin: auto 5px auto 80px;
+}
+
+#first-title {
+  font-size: 65px;
+  text-align: left;
+  line-height: 1em;
+  font-weight: 400;
+
+  margin: 0 0 15px;
+}
+
+#second-title {
+  font-size: 21px;
+  color: rgb(135, 138, 135);
+  line-height: 1.3em;
+}
+
+.sign {
+  width: 119%;
+}
+
+#sign form {
+  color: black;
+  background: white;
+  font-size: 14px;
+  width: 410px;
+  border-radius: 7px;
+  padding: 29px 23px;
+  margin: 34px 65px 51px;
+}
+
+#sign form input {
+  color: black;
+  width: 100%;
+  height: 40px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 10px 7px;
+  margin: 5px auto 15px;
+}
+
+#sign form h {
+  font-size: 11px;
+  color: rgb(135, 138, 135);
+  font-weight: 500;
+  line-height: 1.4em;
+}
+
+.blue {
+  font-size: 12px;
+  color: rgb(62, 181, 201);
+  text-align: left;
+  margin: 5px 2px;
+  display: inline-block;
+}
+
+#signup-btn {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(70, 186, 61);
+  border: none;
+  border-radius: 7px;
+  margin: 14px auto 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#photo {
+  float: right;
+  height: 254px;
+  z-index: 10;
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+}
