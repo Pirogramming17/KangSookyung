@@ -64,4 +64,28 @@
   border: none;
   padding: 0;
   outline: none;
+  vertical-align: top;
+  width: 405px;
+  height: 23px;
+}
+
+#header-search fieldset button {
+  width: 49px;
+  height: 48px;
+  border: none;
+  padding: 0;
+  background: #03cf5d;
+  position: absolute;
+  right: -2px;
+  top: -2px;
+}
+
+#search-image {
+  background-image: url(./sp_search.png);
+  background-position: -3px -60px;
+  background-repeat: no-repeat;
+  width: 21px;
+  height: 21px;
+  display: inline-block;
+  margin: 14px;
 }
