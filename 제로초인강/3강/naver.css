@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .blind {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -51,5 +55,13 @@
   width: 521px;
   height: 49px;
   display: inline-block;
-  border: 2px solid #03cf5d; /* 한방에 써주는 법*/
+  border: 3px solid #03cf5d; /* 한방에 써주는 법*/
+  vertical-align: middle;
+  position: relative;
+}
+
+#header-search fieldset input {
+  border: none;
+  padding: 0;
+  outline: none;
 }
