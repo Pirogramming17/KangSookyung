@@ -41,6 +41,7 @@ body {
   margin: 0 auto;
   width: 1080px;
 }
+
 /*div 앞에 생략 할수 있음*/
 #header-search a {
   text-decoration: none;
@@ -125,7 +126,8 @@ nav ul {
 nav li {
   display: inline-block;
 }
-/*뒤에 나오는 css가 우선순위가 높다*/
+/*아래의  css가 우선순위가 높다*/
+/*동메달세개 은메달 하나 같은 클래스를 더 붙이면 우선순위가 올라감*/
 nav li:first-child span:first-child {
   width: 25px;
   background-position: 0 -285px;
