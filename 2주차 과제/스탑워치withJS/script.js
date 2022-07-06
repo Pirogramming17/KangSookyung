@@ -10,7 +10,7 @@ const buttonreset = document.getElementById("btn_reset");
 
 const $btn_del = document.querySelector(".btn_del");
 const $recordList = document.querySelector(".log");
-const $allCheck = document.querySelector(".allCheckBox");
+const $allCheck = document.querySelector(".allcheckbox");
 
 let intervalId;
 
