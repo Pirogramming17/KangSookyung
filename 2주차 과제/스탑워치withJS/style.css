@@ -48,15 +48,18 @@ button:action {
   min-width: 320px;
   max-width: 640px;
   margin: 10px auto;
-  padding: 5px 0 15px;
+  padding: 10px 0 15px;
   text-align: center;
   border: 1px solid white;
-
+  font-size: 20px;
   color: white;
 }
 
 .log ul {
-  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
 .log li {
@@ -66,13 +69,14 @@ button:action {
   margin-bottom: 1rem;
 }
 
-.log button {
-  width: 40px;
-  height: 45px;
-  font-size: 20px;
-  background-color: white;
+.log span {
+  margin-left: 50px;
 }
 
-.btn_check {
-  border-radius: 9px;
+.log button {
+  height: 30px;
+  width: 30px;
+  font-size: 20px;
+  margin-left: 50px;
+  background-color: white;
 }

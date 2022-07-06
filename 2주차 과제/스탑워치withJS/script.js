@@ -8,6 +8,10 @@ const buttonstart = document.getElementById("btn_start");
 const buttonstop = document.getElementById("btn_stop");
 const buttonreset = document.getElementById("btn_reset");
 
+const $btn_del = document.querySelector(".btn_del");
+const $recordList = document.querySelector(".log");
+const $allCheck = document.querySelector(".allCheckBox");
+
 let intervalId;
 
 buttonstart.onclick = function () {
@@ -17,11 +21,34 @@ buttonstart.onclick = function () {
 
 buttonstop.onclick = function () {
   clearInterval(intervalId);
-  const timelapList = document.querySelector(".loglist");
-  const li = document.createElement("li");
-  li.innerText = display.innerText;
-  timelapList.appendChild(li);
+
+  let checkBox = document.createElement("input");
+  checkBox.setAttribute("type", "checkbox");
+  checkBox.setAttribute("class", "checkbox");
+  let timeRecord = document.createElement("li");
+
+  timeRecord.textContent =
+    appendminutes.textContent +
+    ":" +
+    appendseconds.textContent +
+    ":" +
+    appendmili.textContent;
+
+  $recordList.appendChild(checkBox);
+  $recordList.appendChild(timeRecord);
 };
+
+function selectAll(selectAll) {
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+  checkboxes.forEach((checkbox) => {
+    checkbox.checked = selectAll.checked;
+  });
+}
+
+$allCheck.addEventListener("click", function () {
+  selectAll(this);
+});
 
 buttonreset.onclick = function () {
   clearInterval(intervalId);
@@ -48,5 +75,4 @@ function operatetimer() {
     seconds = 0;
     appendseconds = "00";
   }
-  //return appendminutes + ":" + appendseconds + ":" + appendmili;
 }
