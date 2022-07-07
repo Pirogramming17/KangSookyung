@@ -17,3 +17,7 @@ while True:
         else:
             break
             
+            
+for i in range(call):
+    print("PlayerA:",i+1)
+    
