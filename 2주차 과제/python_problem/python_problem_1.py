@@ -20,15 +20,19 @@ def calling():
             
             
 
-    
-for i in range(2):
-    call=calling() 
-    if i==0:
-        for j in range(call):
-            num=num+1
-            print("PlayerA:",num)
-    if i ==1:
-        for k in range(call):
-            num=num+1
-            print("PlayerB:",num)
-    
+while(num<31):    
+        i=0
+        call=calling() 
+        if i%2==0:
+            for j in range(call):
+                num=num+1
+                print("PlayerA:",num)
+                if num==31:
+                    break
+        if i %2==1:
+            for k in range(call):
+                num=num+1
+                print("PlayerB:",num)
+                if num==31:
+                    break
+        i=i+1
