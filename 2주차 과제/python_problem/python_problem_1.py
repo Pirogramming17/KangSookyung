@@ -4,7 +4,7 @@ import random
 
 num = 0
 
-def calling():
+def brGame():
     while True:
 
         try:
@@ -22,7 +22,7 @@ def calling():
 
 while(num<31):    
         i=0
-        call=calling() 
+        call=brGame() 
         if i%2==0:
             for j in range(call):
                 num=num+1
