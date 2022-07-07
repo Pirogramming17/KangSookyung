@@ -28,11 +28,13 @@ while(num<31):
                 num=num+1
                 print("PlayerA:",num)
                 if num==31:
+                    print("playerB win!")
                     break
         if i %2==1:
             for k in range(call):
                 num=num+1
                 print("PlayerB:",num)
                 if num==31:
+                    print("playerA win!")
                     break
         i=i+1
