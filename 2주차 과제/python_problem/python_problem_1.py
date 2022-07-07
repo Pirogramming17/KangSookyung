@@ -20,21 +20,26 @@ def brGame():
             
             
 
-while(num<31):    
-        i=0
-        call=brGame() 
-        if i%2==0:
+while(num<31):  
+         
+        
+            call=random.randint(1,3) 
+        
+            
             for j in range(call):
                 num=num+1
-                print("PlayerA:",num)
+                print("Computer:",num)
                 if num==31:
-                    print("playerB win!")
-                    break
-        if i %2==1:
+                    print("player win!")
+                    
+                    exit()
+                    
+            call=brGame()         
             for k in range(call):
                 num=num+1
-                print("PlayerB:",num)
+                print("Player:",num)
                 if num==31:
-                    print("playerA win!")
-                    break
-        i=i+1
+                    print("computer win!")
+                    
+                    exit()
+       
