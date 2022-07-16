@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Movie reviews</title>
+  </head>
+  <body>
+    <form action="{% url 'posts:modify' review.id %}" method="post">
+      {% csrf_token %}
+      <h2>
+        <input
+          type="text"
+          name="title"
+          placeholder="제목"
+          value="{{review.title}}"
+        />
+      </h2>
+      <p>
+        <input
+          type="number"
+          name="release"
+          placeholder="개봉년도"
+          value="{{review.release}}"
+        />
+        <input
+          type="text"
+          name="genre"
+          placeholder="장르"
+          value="{{review.genre}}"
+        />
+        <input
+          type="number"
+          name="star"
+          step="0.01"
+          placeholder="별점"
+          value="{{review.star}}"
+        />
+        <input
+          type="number"
+          name="time"
+          placeholder="러닝타임"
+          value="{{review.time}}"
+        />
+        <textarea name="content" id="" cols="30" rows="10">
+{{review.content}}</textarea
+        >
+        <input
+          type="text"
+          name="director"
+          placeholder="감독"
+          value="{{review.director}}"
+        />
+        <input
+          type="text"
+          name="actor"
+          placeholder="배우"
+          value="{{review.actor}}"
+        />
+      </p>
+
+      <div>
+        <input type="submit" value="Save" />
+      </div>
+    </form>
+  </body>
+</html>

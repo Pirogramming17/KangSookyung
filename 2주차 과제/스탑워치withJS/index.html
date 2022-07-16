@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>스톱워치</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>스톱워치</h2>
+      <h1>
+        <span id="minutes">00</span>:<span id="seconds">00</span>:<span
+          id="mili"
+          >00</span
+        >
+      </h1>
+      <button id="btn_start">START</button>
+      <button id="btn_stop">STOP</button>
+      <button id="btn_reset">RESET</button>
+    </div>
+
+    <div class="log">
+      <div class="record-title">
+        <input class="allcheckbox" type="checkbox" />
+        <span> LOG </span>
+        <button class="btn_del"><i class="fa-solid fa-trash"></i></button>
+      </div>
+      <ul class="recordList"></ul>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/f578b19b63.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

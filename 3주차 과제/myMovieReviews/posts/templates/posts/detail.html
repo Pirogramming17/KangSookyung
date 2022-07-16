@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Movie reviews</title>
+  </head>
+  <body>
+    <h1><a href="/">my Movie reviews</a></h1>
+    <h2><a href="{% url 'posts:create' %}">Add a New Review</a></h2>
+    <article>
+      <h2>제목 : {{ review.title }}</h2>
+      <a href="{% url 'posts:modify' review.id %}">수정</a>
+      <form action="{% url 'posts:delete' review.id %}" method="post">
+        {% csrf_token %}
+        <button>삭제</button>
+      </form>
+      <p>개봉년도: {{ review.release }}</p>
+      <p>감독: {{review.director}}</p>
+      <p>주연: {{review.actor}}</p>
+      <p>장르: {{review.genre}}</p>
+      <p>별점: {{review.star}}</p>
+      <p>러닝타임: {{review.time}}</p>
+      <div>{{review.content}}</div>
+    </article>
+
+    {% comment %}
+    <div>수정 : <a href="{% url 'reviews:update' review.id %}">update</a></div>
+    <div>
+      삭제하기 :
+      <form action="{% url 'reviews:delete' review.id %}" method="review">
+        {% csrf_token %}
+        <button>삭제</button>
+      </form>
+    </div>
+    {% endcomment %}
+  </body>
+</html>

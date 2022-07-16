@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Movie reviews</title>
+  </head>
+  <body>
+    <h1><a href="/">my Movie reviews</a></h1>
+    <h2><a href="{% url 'posts:create' %}">Add a New Review</a></h2>
+    {% for review in reviews %}
+    <article>
+      <h2>
+        <a href="{% url 'posts:detail' review.id %}">{{review.title}}</a>
+      </h2>
+      <p>{{review.release}}</p>
+      <p>{{review.genre}}</p>
+      <p>{{review.star}}</p>
+    </article>
+    {% endfor %}
+  </body>
+</html>
