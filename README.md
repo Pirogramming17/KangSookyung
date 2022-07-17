@@ -6,3 +6,9 @@
 ![결과물](./1%EC%A3%BC%EC%B0%A8%EA%B3%BC%EC%A0%9C/booststrap%EA%B3%BC%EC%A0%9C/%EA%B2%B0%EA%B3%BC%EC%82%AC%EC%A7%84.png)
 
 ## 2주차 과제
+
+![결과물](./2주차과제/스탑워치withJS/스탑워치.png)
+
+## 3주차 과제
+
+![결과물](<./3주차 과제/Facebook_ERD/Facebook.png>)
