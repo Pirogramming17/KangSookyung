@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  {% load static %}
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>홈 화면</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="{% url 'posts:home' %}">My <span>SW Idea</span> Manage</a>
+      </div>
+      <a href="{% url 'posts:create' %}"> 아이디어 등록 </a>
+      <a href="{% url 'posts:home' %}"> 아이디어 관리 </a>
+      <a href="{% url 'posts:create' %}"> 개발툴 등록 </a>
+      <a href="{% url 'posts:create' %}"> 개발툴 관리 </a>
+    </nav>
+
+    <article>
+      <div class="title">
+        <h2>Idea List</h2>
+        <p>나의 아이디어를 잊지 말고 기록해보세요</p>
+      </div>
+      <form class="sort" method="GET">
+        {% csrf_token %}
+        <select name="sort" onchange="this.form.submit();">
+          <option value="default">--정렬기준--</option>
+          <option value="zzim">찜하기순</option>
+          <option value="createAt">등록순</option>
+          <option value="updateAt">최신업데이트순</option>
+          <option value="name">이름순</option>
+        </select>
+      </form>
+      <div class="posts">
+        {% for post in posts %}
+        <div class="post">
+          {% if post.photo %}
+          <p>
+            <img src="{{post.photo.url}}" />
+          </p>
+          {% endif %}
+          <div class="desc">
+            <a href="{% url 'posts:detail' post.id %}"> {{post.title}} </a>
+            <hr />
+            <p>예상 개발툴 :</p>
+            <div class="interest">
+              아이디어 관심도 :
+              <button class="plusBtn" onClick="plusInterest({{post.id}})">
+                +
+              </button>
+              <p class="interestState">{{post.interest}}</p>
+              <button class="minusBtn" onClick="minusInterest({{post.id}})">
+                -
+              </button>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </article>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="{% static 'javascripts/home.js' %}"
+    ></script>
+  </body>
+</html>
